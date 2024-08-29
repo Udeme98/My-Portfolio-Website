@@ -1,8 +1,12 @@
+import { useMediaQuery } from "react-responsive";
+
 const Hero = () => {
+  const md = useMediaQuery({ query: "(min-width: 768px)" });
+
   return (
-    <div>
-      <div className="flex h-[80vh] justify-evenly items-center">
-        <div className="w-[500px] flex flex-col">
+    <section className="relative overflow-hidden">
+      <div className="flex flex-col-reverse md:flex-row md:h-[80vh] items-center justify-evenly px-4 md:px-8">
+        <div className="w-full md:w-[500px] flex flex-col text-center md:text-left">
           <div>
             <h1 className="text-3xl text-gray-700 italic">Hi,</h1>
             <h1 className="text-5xl font-semibold text-gray-500 leading-normal">
@@ -15,16 +19,62 @@ const Hero = () => {
             </p>
           </div>
           <div className="mt-12">
-            <button className="bg-red-900 py-3 px-3 text-gray-300 rounded-md">
+            <a
+              href="public/Udeme_Resumé.pdf"
+              download="Udeme_Resumé.pdf"
+              className="bg-red-900 py-3 px-6 text-gray-300 rounded-md inline-block"
+            >
+              Download CV
+            </a>
+          </div>
+          {/* <div className="mt-12">
+            <button className="bg-red-900 py-3 px-6 text-gray-300 rounded-md">
               Download CV
             </button>
-          </div>
+          </div> */}
         </div>
-        <div>
-          <img src="heropic.jpg" width={450} className="rounded-md" />
+        <div className="flex justify-center m-5">
+          <img
+            src="heropic.jpg"
+            width={md ? "450" : "400"}
+            className="rounded-md"
+            alt="Hero"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;
+
+//   return (
+//     <div>
+//       <div className="flex md:h-[80vh] justify-evenly items-center flex-col-reverse md:flex-row">
+//         <div className="w-[500px] flex flex-col text-center md:text-left">
+//           <div>
+//             <h1 className="text-3xl text-gray-700 italic">Hi,</h1>
+//             <h1 className="text-5xl font-semibold text-gray-500 leading-normal">
+//               I'm <span className="text-red-900">Udeme Udeme,</span>
+//             </h1>
+//             <p className="text-xl text-gray-700 leading-7">
+//               A dedicated, passionate, and highly motivated Frontend Web
+//               Developer with over 3 years of experience working with HTML, CSS,
+//               JavaScript, NextJS, Typescript, TailwindCSS, ReactJS.
+//             </p>
+//           </div>
+//           <div className="mt-12">
+//             <button className="bg-red-900 py-3 px-3 text-gray-300 rounded-md">
+//               Download CV
+//             </button>
+//           </div>
+//         </div>
+//         <div>
+//           <img
+//             src="heropic.jpg"
+//             width={md ? "450" : "400"}
+//             className="rounded-md "
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   );

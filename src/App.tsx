@@ -7,9 +7,8 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
-        <div className="container mx-auto">
-          <Hero />
-        </div>
+        <Hero />
+        <div className="container mx-auto"></div>
       </BrowserRouter>
     </>
   );
