@@ -48,16 +48,6 @@ const Header = () => {
           </ul>
         </div>
       ) : null}
-      {/* {menuOpen ? (
-        <div className="flex flex-col space-y-3 font-bold mt-4 text-4xl text-red-600 items-center  md:hidden absolute">
-          <Link to={"/"} onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
-          <Link to={"/cart"} onClick={() => setMenuOpen(false)}>
-            Projects
-          </Link>
-        </div>
-      ) : null} */}
     </div>
   );
 };
