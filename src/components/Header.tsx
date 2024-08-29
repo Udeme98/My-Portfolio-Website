@@ -6,10 +6,10 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="shadow-md ">
+    <div className="shadow-lg bg-slate-400 font-roboto text-red-900">
       <div className="flex justify-between items-center h-20 container mx-auto">
         <Link to={"/"}>
-          <img src="/udemelogo.png" alt="website-logo" width={150} />
+          <img src="/udemelogo.png" alt="website-logo" width={130} />
         </Link>
         <ul className=" hidden md:flex gap-5 uppercase font-semibold">
           <li>

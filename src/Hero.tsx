@@ -4,18 +4,19 @@ const Hero = () => {
   const md = useMediaQuery({ query: "(min-width: 768px)" });
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="flex flex-col-reverse md:flex-row md:h-[80vh] items-center justify-evenly px-4 md:px-8">
+    <section className="relative overflow-hidden bg-slate-400 font-lato">
+      <div className="flex flex-col-reverse md:flex-row md:h-[87vh] items-center justify-evenly px-4 md:px-8">
         <div className="w-full md:w-[500px] flex flex-col text-center md:text-left">
           <div>
-            <h1 className="text-3xl text-gray-700 italic">Hi,</h1>
-            <h1 className="text-5xl font-semibold text-gray-500 leading-normal">
-              I'm <span className="text-red-900">Udeme Udeme,</span>
+            <h1 className="text-2xl md:text-3xl text-gray-800 italic">Hi,</h1>
+            <h1 className="text-4xl md:text-5xl font-semibold text-gray-700 mt-3">
+              I'm <span className="text-red-900 ">Udeme Udeme,</span>
             </h1>
-            <p className="text-xl text-gray-700 leading-7">
+            <p className="text-xl text-gray-900 leading-normal mt-3">
               A dedicated, passionate, and highly motivated Frontend Web
               Developer with over 3 years of experience working with HTML, CSS,
-              JavaScript, NextJS, Typescript, TailwindCSS, ReactJS.
+              JavaScript, NextJS, Typescript, TailwindCSS, ReactJS to develop
+              visually appealing, user-friendly, and responsive web applications
             </p>
           </div>
           <div className="mt-12">

@@ -8,7 +8,6 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Hero />
-        <div className="container mx-auto"></div>
       </BrowserRouter>
     </>
   );
