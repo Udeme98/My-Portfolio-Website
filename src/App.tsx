@@ -1,8 +1,14 @@
+import Header from "./components/Header";
+import Hero from "./Hero";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-2xl">My Portfolio</h1>
-    </div>
+    <>
+      <Header />
+      <div className="container mx-auto">
+        <Hero />
+      </div>
+    </>
   );
 };
 export default App;
