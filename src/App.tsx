@@ -1,13 +1,16 @@
 import Header from "./components/Header";
 import Hero from "./Hero";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <div className="container mx-auto">
-        <Hero />
-      </div>
+      <BrowserRouter>
+        <Header />
+        <div className="container mx-auto">
+          <Hero />
+        </div>
+      </BrowserRouter>
     </>
   );
 };
