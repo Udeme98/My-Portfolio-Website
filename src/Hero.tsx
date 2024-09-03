@@ -8,18 +8,18 @@ const Hero = () => {
       <div className="flex flex-col-reverse md:flex-row md:h-[87vh] items-center justify-evenly px-4 md:px-8">
         <div className="w-full md:w-[500px] flex flex-col text-center md:text-left">
           <div>
-            <h1 className="text-2xl md:text-3xl text-gray-800 italic">Hi,</h1>
-            <h1 className="text-4xl md:text-5xl font-semibold text-gray-700 mt-3">
+            <h1 className="text-xl md:text-2xl text-gray-800 italic">Hi,</h1>
+            <h1 className="text-3xl md:text-4xl font-semibold text-gray-700 mt-3">
               I'm <span className="text-red-900 ">Udeme Udeme,</span>
             </h1>
-            <p className="text-xl text-gray-900 leading-normal mt-3">
+            <p className="text-xs md:text-base text-gray-900 leading-normal mt-3 font-semibold">
               A dedicated, passionate, and highly motivated Frontend Web
               Developer with over 3 years of experience working with HTML, CSS,
               JavaScript, NextJS, Typescript, TailwindCSS, ReactJS to develop
               visually appealing, user-friendly, and responsive web applications
             </p>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 mb-10 md:mb-0">
             <a
               href="public/Udeme_Resumé.pdf"
               download="Udeme_Resumé.pdf"
