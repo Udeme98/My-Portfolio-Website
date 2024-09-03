@@ -1,6 +1,8 @@
 import ProjectCard from "./components/ProjectCard";
+import { projects } from "./projects.js";
 
 const Projects = () => {
+  //   console.log(projects);
   return (
     <>
       <section className="bg-slate-800">
@@ -10,7 +12,9 @@ const Projects = () => {
           </h2>
         </div>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-9 md:grid-cols-3 justify-items-center">
-          <ProjectCard />
+          {projects.map((project) => {
+            return <ProjectCard key={project.id} {...project} />;
+          })}
         </div>
       </section>
     </>

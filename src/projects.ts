@@ -1,0 +1,42 @@
+export const projects = [
+  {
+    id: 1,
+    img: "./images/nike.png",
+    title: "Nike Landing Page",
+    tools: "HTML/CSS, TailwindCSS",
+    github: "https://github.com/Udeme98/Tailwind-Nike",
+    live: "https://udnike.netlify.app/",
+  },
+  {
+    id: 1,
+    img: "./images/nike.png",
+    title: "Nike Landing Page",
+    tools: "HTML/CSS, TailwindCSS",
+    github: "https://github.com/Udeme98/Tailwind-Nike",
+    live: "https://udnike.netlify.app/",
+  },
+  {
+    id: 1,
+    img: "./images/nike.png",
+    title: "Nike Landing Page",
+    tools: "HTML/CSS, TailwindCSS",
+    github: "https://github.com/Udeme98/Tailwind-Nike",
+    live: "https://udnike.netlify.app/",
+  },
+  {
+    id: 1,
+    img: "./images/nike.png",
+    title: "Nike Landing Page",
+    tools: "HTML/CSS, TailwindCSS",
+    github: "https://github.com/Udeme98/Tailwind-Nike",
+    live: "https://udnike.netlify.app/",
+  },
+  {
+    id: 1,
+    img: "./images/nike.png",
+    title: "Nike Landing Page",
+    tools: "HTML/CSS, TailwindCSS",
+    github: "https://github.com/Udeme98/Tailwind-Nike",
+    live: "https://udnike.netlify.app/",
+  },
+];
