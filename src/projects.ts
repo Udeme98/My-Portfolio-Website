@@ -25,11 +25,11 @@ export const projects = [
   },
   {
     id: 4,
-    img: "./images/food-recipe.png",
-    title: "Food Recipe App",
-    tools: "HTML/CSS, TailwindCSS",
-    github: "https://github.com/Udeme98/Tailwind-Nike",
-    live: "https://udnike.netlify.app/",
+    img: "./images/Manage.png",
+    title: "Manage Landing Page",
+    tools: "HTML/CSS, TailwindCSS, JavaScript",
+    github: "https://github.com/Udeme98/Manage",
+    live: "https://ud-manage.netlify.app/",
   },
   {
     id: 5,
