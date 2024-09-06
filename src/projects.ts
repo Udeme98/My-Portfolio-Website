@@ -43,8 +43,8 @@ export const projects = [
     id: 6,
     img: "./images/food-recipe.png",
     title: "Food Recipe App",
-    tools: "Reactjs, React-router, TailwindCSS",
+    tools: "Reactjs, React-router, Context-API, TailwindCSS",
     github: "https://github.com/Udeme98/Food-Recipe-App",
-    live: "https://udnike.netlify.app/",
+    live: "https://ud-food-recipe.netlify.app/",
   },
 ];
