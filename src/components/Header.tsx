@@ -6,7 +6,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="shadow-lg bg-slate-400 font-roboto text-red-900">
+    <nav className="shadow-lg bg-slate-400 font-roboto text-red-900">
       <div className="flex justify-between items-center h-20 container mx-auto">
         <Link to={"/"}>
           <img src="/udemelogo.png" alt="website-logo" width={130} />
@@ -48,7 +48,7 @@ const Header = () => {
           </ul>
         </div>
       ) : null}
-    </div>
+    </nav>
   );
 };
 export default Header;
