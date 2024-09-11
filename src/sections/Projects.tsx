@@ -1,5 +1,5 @@
 import ProjectCard from "../components/ProjectCard.js";
-import { projects } from "../Projects.js";
+import { projects } from "../projects.ts";
 
 const Projects = () => {
   //   console.log(projects);
@@ -7,7 +7,10 @@ const Projects = () => {
     <>
       <section className="bg-slate-800">
         <div className="container mx-auto text-center py-8">
-          <h2 className="text-2xl uppercase text-red-600 font-semibold mb-4 border-b-2 border-red-600  inline-block">
+          <h2
+            className="text-2xl uppercase text-red-600 font-semibold mb-4 border-b-2 border-red-600  inline-block"
+            id="projects"
+          >
             My Projects
           </h2>
         </div>
