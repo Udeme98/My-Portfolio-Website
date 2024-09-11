@@ -1,8 +1,8 @@
 import Header from "./components/Header";
-import Hero from "./Hero";
+import Hero from "./sections/Hero";
 import { BrowserRouter } from "react-router-dom";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 const App = () => {
   return (

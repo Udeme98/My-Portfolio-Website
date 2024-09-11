@@ -1,5 +1,5 @@
-import ProjectCard from "./components/ProjectCard";
-import { projects } from "./projects.js";
+import ProjectCard from "../components/ProjectCard.js";
+import { projects } from "../Projects.js";
 
 const Projects = () => {
   //   console.log(projects);
