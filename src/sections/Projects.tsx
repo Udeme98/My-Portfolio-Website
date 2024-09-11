@@ -5,12 +5,9 @@ const Projects = () => {
   //   console.log(projects);
   return (
     <>
-      <section className="bg-slate-800">
+      <section className="bg-slate-800" id="projects">
         <div className="container mx-auto text-center py-8">
-          <h2
-            className="text-2xl uppercase text-red-600 font-semibold mb-4 border-b-2 border-red-600  inline-block"
-            id="projects"
-          >
+          <h2 className="text-2xl uppercase text-red-600 font-semibold mb-4 border-b-2 border-red-600  inline-block">
             My Projects
           </h2>
         </div>
