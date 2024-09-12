@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import { Link } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,12 +17,24 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="projects" smooth={true} duration={500}>
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               Projects
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link to="#contact-me">Contact Me</Link>
+            <ScrollLink
+              to="contacts"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
+              Contact Me
+            </ScrollLink>
           </li>
         </ul>
         <button
