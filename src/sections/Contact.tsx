@@ -1,4 +1,19 @@
+import { useState } from "react";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   return (
     <>
       <section id="contacts" className="bg-slate-500 font-lato">
@@ -13,6 +28,8 @@ const Contact = () => {
               type="text"
               name="name"
               id="name"
+              value={formData.name}
+              onChange={handleChange}
               aria-label="Your Name"
               placeholder="Your Name"
               className="p-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-1 focus:ring-red-600 font-lato"
@@ -23,6 +40,8 @@ const Contact = () => {
               type="email"
               name="email"
               id="email"
+              value={formData.email}
+              onChange={handleChange}
               aria-label="Email Address"
               placeholder="Email Address"
               className="p-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-1 focus:ring-red-600 font-lato"
@@ -34,6 +53,8 @@ const Contact = () => {
               id="message"
               aria-label="Your Message"
               placeholder="Type your message..."
+              value={formData.message}
+              onChange={handleChange}
               rows={7}
               className="p-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-1 focus:ring-red-600 font-lato"
               required
