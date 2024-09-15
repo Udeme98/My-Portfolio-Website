@@ -1,17 +1,25 @@
 import { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+    //The form logic will be handled here...
+    setFormData(initialFormData);
   };
 
   return (
@@ -23,7 +31,10 @@ const Contact = () => {
           </h2>
         </div>
         <div className="container mx-auto text-center py-4 flex justify-center">
-          <form className="bg-slate-300 px-4 py-4 rounded-md flex flex-col gap-7 w-full md:w-[50%]">
+          <form
+            className="bg-slate-300 px-4 py-4 rounded-md flex flex-col gap-7 w-full md:w-[50%]"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
               name="name"
