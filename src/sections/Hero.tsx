@@ -10,7 +10,7 @@ const Hero = () => {
           <div>
             {/* <h1 className="text-xl md:text-2xl text-gray-800 italic">Hi,</h1> */}
             <h1 className="text-3xl md:text-4xl font-semibold text-gray-700 mt-3">
-              I'm <span className="text-red-900 ">Udeme Udeme,</span>
+              I'm <span className="text-red-700 ">Udeme Udeme,</span>
             </h1>
             <p className="text-xs md:text-base text-gray-900 leading-normal mt-3 font-semibold">
               A dedicated, passionate, and highly motivated Frontend Web
@@ -23,7 +23,7 @@ const Hero = () => {
             <a
               href="public/Udeme_Resumé.pdf"
               download="Udeme_Resumé.pdf"
-              className="bg-red-900 py-3 px-6 text-gray-300 rounded-md inline-block"
+              className="bg-red-700 py-3 px-6 text-gray-300 rounded-md inline-block hover:bg-red-600"
             >
               Download CV
             </a>

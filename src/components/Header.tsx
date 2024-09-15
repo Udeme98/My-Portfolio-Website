@@ -7,7 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="shadow-lg bg-slate-500 font-roboto text-red-800">
+    <nav className="shadow-lg bg-slate-500 font-roboto text-red-700">
       <div className="flex justify-between items-center h-20 container mx-auto">
         <Link to={"/"}>
           <img src="/udemelogo.png" alt="website-logo" width={130} />
