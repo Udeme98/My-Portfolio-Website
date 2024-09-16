@@ -12,7 +12,7 @@ const Header = () => {
         <Link to={"/"}>
           <img src="/udemelogo.png" alt="website-logo" width={130} />
         </Link>
-        <ul className=" hidden md:flex gap-5 uppercase font-semibold">
+        <ul className=" hidden md:flex gap-5 uppercase font-semibold text-xl">
           <li>
             <Link to="/">Home</Link>
           </li>
