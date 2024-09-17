@@ -12,7 +12,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl font-semibold text-gray-700 mt-3">
               I'm <span className="text-red-700 ">Udeme Udeme,</span>
             </h1>
-            <p className="text-xs md:text-lg text-gray-900 leading-normal mt-3 font-semibold">
+            <p className="text-base md:text-lg text-gray-900 leading-normal mt-3 font-semibold">
               A dedicated, passionate, and highly motivated Frontend Web
               Developer with over 3 years of experience working with HTML, CSS,
               JavaScript, NextJS, Typescript, TailwindCSS, ReactJS to develop
