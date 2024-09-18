@@ -12,7 +12,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ img, title, tools, github, live }: ProjectCardProps) => {
   return (
-    <div className=" w-[350px] border border-gray-400 rounded-md p-2">
+    <div className=" w-[400px] border border-gray-400 rounded-md p-2">
       <img src={img} alt={title} className="w-full object-cover" />
       <div className="mt-3 font-mono text-slate-300">
         <h2 className="mb-2">{title}</h2>
