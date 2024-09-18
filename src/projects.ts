@@ -19,7 +19,7 @@ export const projects = [
     id: 3,
     img: "./images/expense-tracker.png",
     title: "Expense Tracker App",
-    tools: "Reactjs, React-ApexChart, React-icons, TailwindCSS",
+    tools: "Reactjs, React-ApexChart, TailwindCSS",
     github: "https://github.com/Udeme98/Expense-Tracker-App",
     live: "https://ud-expense-tracker.netlify.app/",
   },
