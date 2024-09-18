@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const initialFormData = {
@@ -17,8 +18,26 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
     //The form logic will be handled here...
+
+    emailjs
+      .send(
+        "service_hhmri6v",
+        "template_zwhlbym",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "mRW9vfH-osOlJCqW9"
+      )
+      .then((response) => {
+        console.log("SUCCESS", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("Failed...", err);
+      });
     setFormData(initialFormData);
   };
 
