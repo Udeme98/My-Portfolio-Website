@@ -1,6 +1,9 @@
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaX } from "react-icons/fa6";
+
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 text-white py-6">
+    <footer className="bg-slate-800 text-white py-6 font-roboto">
       <div className="container mx-auto flex flex-col items-center justify-center">
         <div className="flex gap-5">
           <a
@@ -8,21 +11,21 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            <FaGithub className="text-2xl md:text-3xl" />
           </a>
           <a
             href="https://www.linkedIn.com/in/darealudeme1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <FaLinkedin className="text-2xl md:text-3xl" />
           </a>
           <a
             href="https://www.twitter.com/Darealudeme1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Twitter
+            <FaTwitter className="text-2xl md:text-3xl" />
           </a>
         </div>
         <p className="mt-4 text-sm">
