@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import { FaLinkedin, FaTwitter, FaX } from "react-icons/fa6";
+import { FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="mt-4 text-sm">
-          &copy;{new Date().getFullYear()} Udeme Udeme. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Udeme Udeme. All Rights Reserved.
         </p>
       </div>
     </footer>
