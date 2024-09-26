@@ -55,10 +55,24 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="projects">Projects</Link>
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+              >
+                Projects
+              </ScrollLink>
             </li>
             <li>
-              <Link to="#contact-me">Contact Me</Link>
+              <ScrollLink
+                to="contacts"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer"
+              >
+                Contact Me
+              </ScrollLink>
             </li>
           </ul>
         </div>
