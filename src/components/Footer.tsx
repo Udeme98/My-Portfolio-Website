@@ -10,6 +10,7 @@ const Footer = () => {
             href="https://www.github.com/Udeme98"
             target="_blank"
             rel="noopener noreferrer"
+            title="Github"
           >
             <FaGithub className="text-2xl md:text-3xl" />
           </a>
@@ -18,14 +19,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-2xl md:text-3xl" />
+            <FaLinkedin className="text-2xl md:text-3xl" title="LinkedIn" />
           </a>
           <a
             href="https://www.twitter.com/Darealudeme1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="text-2xl md:text-3xl" />
+            <FaTwitter className="text-2xl md:text-3xl" title="Twitter" />
           </a>
         </div>
         <p className="mt-4 text-sm">
