@@ -7,7 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="shadow-lg bg-slate-500 font-roboto text-red-700">
+    <nav className="shadow-lg bg-slate-500 font-roboto text-red-900">
       <div className="flex justify-between items-center h-20 container mx-auto">
         <Link to={"/"}>
           <img src="/udemelogo.png" alt="website-logo" width={130} />
@@ -50,11 +50,11 @@ const Header = () => {
       </div>
       {menuOpen ? (
         <div className="flex flex-col space-y-3 font-semibold mt-2 text-center uppercase text-base md:hidden">
-          <ul>
-            <li>
+          <ul className="flex flex-col gap-3">
+            <li className="shadow-md">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="shadow-md">
               <ScrollLink
                 to="projects"
                 smooth={true}
